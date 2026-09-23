@@ -122,7 +122,6 @@ The application validates important user input such as:
 
 API responses such as unsuccessful login, duplicate registration and invalid requests are handled without crashing the application.
 
-
 ## 4. Technologies Used
 
 ### Android Application
