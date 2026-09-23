@@ -326,7 +326,6 @@ The application handles common errors including:
 Error messages are displayed to the user instead of allowing the application to crash.
 
 
-
 ## 14. User Interface Design
 
 CareerPath AI uses a modern mobile interface designed using Jetpack Compose.
