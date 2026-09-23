@@ -229,7 +229,6 @@ The tests verify:
 
 **All five unit tests passed successfully.**
 
-
 ## 9. GitHub Actions
 
 GitHub Actions was implemented to automate the project testing and build process.
@@ -291,7 +290,6 @@ The following software is required:
 > **Note:** When using the Android Emulator for local API development, the application uses `10.0.2.2` to access the API running on the development computer.
 
 
-
 ## 12. Project Structure
 
 The project contains the main Android application module:
@@ -308,7 +306,6 @@ Important components include:
 * Android resources
 * Gradle configuration
 * GitHub Actions workflow
-
 
 
 ## 13. Error Handling
@@ -339,7 +336,6 @@ The application uses a blue-based visual design with clear navigation between:
 * Settings
 
 The interface was designed to be simple enough for users to complete the assessment without unnecessary navigation.
-
 
 
 ## 15. Demonstration Video
