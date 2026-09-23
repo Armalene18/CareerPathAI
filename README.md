@@ -362,7 +362,7 @@ The demonstration covers:
 * Unit testing
 * GitHub Actions
 
-**Video link:** Add the final demonstration video link here.
+**Video link:** https://youtu.be/skugPfLoRCE
 
 
 
