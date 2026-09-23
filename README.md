@@ -1,15 +1,17 @@
 # CareerPath AI
 
-**1. Project Overview**
+## 1. Project Overview
 
 CareerPath AI is an Android mobile application designed to help users explore suitable career options based on their interests, skills and preferences.
 
-The application provides a short career assessment and uses the user's answers to calculate suitable career options. The prototype also includes user registration and login, application settings, notifications, dark mode, REST API integration and database connectivity.
+The application provides a short career assessment where users answer questions about their interests, preferred type of work, skills they would like to develop and preferred work environment. The answers are processed to calculate suitable career options.
+
+The prototype also includes user registration and login, application settings, REST API integration, SQL Server database connectivity, input validation, unit testing and GitHub Actions.
 
 The project was developed as part of the App Prototype Development assessment for the Diploma in Information Technology (Software Development).
 
 
- **2. Project Objectives**
+## 2. Project Objectives
 
 The main objectives of CareerPath AI are to:
 
@@ -27,7 +29,7 @@ The main objectives of CareerPath AI are to:
 
 ## 3. Main Features
 
- **User Registration**
+### User Registration
 
 Users can create an account by providing:
 
@@ -50,11 +52,18 @@ Passwords are not stored as plain text.
 
 The backend uses ASP.NET Core's `PasswordHasher` to create a secure password hash before storing the user's password information in SQL Server.
 
-During login, the submitted password is verified against the stored hash.
+During login, the submitted password is verified against the stored password hash.
 
 ### Career Assessment
 
 Users complete a four-question career assessment.
+
+The questions consider:
+
+* Area of interest
+* Preferred type of work
+* Skills the user would like to develop
+* Preferred work environment
 
 The answers are processed by the application and used to calculate career suitability scores.
 
@@ -68,7 +77,7 @@ The prototype currently provides career options including:
 
 After completing the assessment, the application displays the calculated career results.
 
-The results are ordered according to the calculated score.
+The results are ordered according to the calculated score, allowing the user to see which career options received the highest scores.
 
 ### Settings
 
@@ -219,7 +228,7 @@ The tests verify:
 4. Business-related answers increase the Business Analyst score.
 5. Career results are sorted from the highest score to the lowest score.
 
-All five unit tests passed successfully during development.
+**All five unit tests passed successfully.**
 
 
 ## 9. GitHub Actions
@@ -271,13 +280,17 @@ The following software is required:
 1. Clone the repository from GitHub.
 2. Open the project in Android Studio.
 3. Allow Gradle to sync.
-4. Connect an Android device or start an Android emulator.
-5. Run the application from Android Studio.
-6. Register a new account.
-7. Log in using the registered account.
-8. Complete the career assessment.
-9. View the career recommendations.
-10. Test the settings and logout functionality.
+4. Start the CareerPath AI ASP.NET Core API.
+5. Start an Android emulator or connect an Android device.
+6. Run the application from Android Studio.
+7. Register a new account.
+8. Log in using the registered account.
+9. Complete the career assessment.
+10. View the career recommendations.
+11. Test the settings and logout functionality.
+
+> **Note:** When using the Android Emulator for local API development, the application uses `10.0.2.2` to access the API running on the development computer.
+
 
 
 ## 12. Project Structure
@@ -288,7 +301,7 @@ The project contains the main Android application module:
 
 Important components include:
 
-* MainActivity
+* `MainActivity`
 * API models
 * Authentication API service
 * Retrofit client
@@ -296,6 +309,7 @@ Important components include:
 * Android resources
 * Gradle configuration
 * GitHub Actions workflow
+
 
 
 ## 13. Error Handling
@@ -310,6 +324,7 @@ The application handles common errors including:
 * API request failures
 
 Error messages are displayed to the user instead of allowing the application to crash.
+
 
 
 ## 14. User Interface Design
@@ -328,15 +343,15 @@ The application uses a blue-based visual design with clear navigation between:
 The interface was designed to be simple enough for users to complete the assessment without unnecessary navigation.
 
 
+
 ## 15. Demonstration Video
 
-A demonstration video will be added to this section.
+The demonstration video shows the main functionality of the CareerPath AI prototype.
 
-The video will demonstrate:
+The demonstration covers:
 
 * User registration
-* Login
-* Password security
+* User login
 * Dashboard
 * Career assessment
 * Career results
@@ -346,27 +361,57 @@ The video will demonstrate:
 * REST API communication
 * Database information
 * Error handling
-* Application functionality
+* Unit testing
+* GitHub Actions
 
-**Video link:** To be added before final submission.
+**Video link:** Add the final demonstration video link here.
+
 
 
 ## 16. Screenshots
 
-Screenshots of the application will be added here to demonstrate the implemented features.
+The following screenshots provide evidence of the implemented functionality.
 
-Recommended screenshots include:
+### 1. Login
 
-1. Login screen
-2. Registration screen
-3. Dashboard
-4. Career Assessment
-5. Career Results
-6. Settings
-7. SQL Server user records
-8. Swagger API registration/login
-9. GitHub Actions successful build
-10. GitHub repository
+![Login Screen](screenshots/01_Login.png)
+
+### 2. Registration
+
+![Registration Screen](screenshots/02_Register.png)
+
+### 3. Dashboard
+
+![Dashboard](screenshots/03_Dashboard.png)
+
+### 4. Career Assessment
+
+![Career Assessment](screenshots/04_Career_Assessment.png)
+
+### 5. Career Results
+
+![Career Results](screenshots/05_Career_Results.png)
+
+### 6. Settings
+
+![Settings](screenshots/06_Settings.png)
+
+### 7. Swagger API
+
+![Swagger API](screenshots/07_Swagger_API.png)
+
+### 8. SQL Server Database
+
+![SQL Server Database](screenshots/08_SQL_Server_Database.png)
+
+### 9. Unit Tests
+
+![Unit Tests](screenshots/09_Unit_Tests.png)
+
+### 10. GitHub Actions
+
+![GitHub Actions](screenshots/10_GitHub_Actions.png)
+
 
 
 ## 17. Version Control
