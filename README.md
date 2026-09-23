@@ -362,7 +362,7 @@ The demonstration covers:
 * Unit testing
 * GitHub Actions
 
-**Video link:** [Watch the CareerPath AI Demonstration] https://youtu.be/Xxtlzan5LrE
+**Video link:** [Watch the CareerPath AI Demonstration] https://youtu.be/0UJ0WTjCqn4
 
 
 ## 16. Screenshots
